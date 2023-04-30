@@ -8,3 +8,13 @@ lower_boundでtargetを指定してイテレータを取得
 v.insert(it,target)でv[it]にtargetを挿入する
 itで取得したイテレータのインデックス番号を取得するには
 it-v.begin()で取得(0-indexeed)
+
+・pythonのdefaultdictをc++で実装するには
+defaultdict(int) -> std::map<int,int>
+defaultdict(list)-> std::map<int,vector<int> >
+
+・c++のsetは自動（二分探索）でソートされる
+
+・pythonのsum()はc++ではstd::accumulate(a.begin(),a.end(),0))になる
+
+・sort()で降順にする方法はsort(a.begin(),a.end(),greater<int>());
