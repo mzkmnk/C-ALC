@@ -1,0 +1,10 @@
+・二分探索(lower_bound())
+vector<int> v = {10,20,30,40,50};
+int target = 21;
+auto it = lower_bound(v.begin(),v.end(),target);
+v.insert(it,target);
+->{10,20,21,30,40,50}
+lower_boundでtargetを指定してイテレータを取得
+v.insert(it,target)でv[it]にtargetを挿入する
+itで取得したイテレータのインデックス番号を取得するには
+it-v.begin()で取得(0-indexeed)
