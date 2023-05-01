@@ -18,3 +18,6 @@ defaultdict(list)-> std::map<int,vector<int> >
 ・pythonのsum()はc++ではstd::accumulate(a.begin(),a.end(),0))になる
 
 ・sort()で降順にする方法はsort(a.begin(),a.end(),greater<int>());
+
+・while(true)をforで実現する方法　
+for(int i = 0; ; ++i){}でできる。
