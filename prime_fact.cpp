@@ -1,13 +1,13 @@
-std::vector<int> prime_fact(int n) {
-    std::vector<int> divisors;
-    for (int i = 1; i <= std::sqrt(n); ++i) {
-        if (n % i == 0) {
-            divisors.push_back(i);
-            if (i != n / i) {
-                divisors.push_back(n / i);
-            }
+std::vector<int> prime_factors(int n) {
+    std::vector<int> factors;
+    for (int i = 2; i <= std::sqrt(n); i++) {
+        while (n % i == 0) {
+            factors.push_back(i);
+            n /= i;
         }
     }
-    std::sort(divisors.begin(), divisors.end());
-    return divisors;
+    if (n > 1) {
+        factors.push_back(n);
+    }
+    return factors;
 }
