@@ -1,5 +1,5 @@
 //約数列挙
-std::vector<int> prime_fact(int n) {
+std::vector<int> divisor_enu(int n) {
     std::vector<int> divisors;
     for (int i = 1; i <= std::sqrt(n); ++i) {
         if (n % i == 0) {
