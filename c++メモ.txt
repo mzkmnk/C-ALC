@@ -21,3 +21,12 @@ defaultdict(list)-> std::map<int,vector<int> >
 
 ・while(true)をforで実現する方法　
 for(int i = 0; ; ++i){}でできる。
+・bit全探索のやり方
+vector<int> ele = {1,2,3,4,5};
+int N = ele.size();
+for(int bit = 0; bit < (1<<N); ++bit){
+  vector<int> subset;
+  for(int i = 0; i < N; ++i){
+    if(bit & (1<<i))subset.push_back(ele[i]);
+    }
+}
