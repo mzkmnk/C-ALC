@@ -30,3 +30,10 @@ for(int bit = 0; bit < (1<<N); ++bit){
     if(bit & (1<<i))subset.push_back(ele[i]);
     }
 }
+
+・複数の値に対してgcd,lcmを出力する方法
+// 最大公約数 (GCD) を求める
+intresult_gcd=std::accumulate(numbers.begin(),numbers.end(),numbers[0],std::gcd<int>);
+
+// 最小公倍数 (LCM) を求める
+int result_lcm = std::accumulate(numbers.begin(), numbers.end(),1,std::lcm<int>);
