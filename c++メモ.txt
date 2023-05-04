@@ -38,3 +38,10 @@ for(int bit = 0; bit < (1<<N); ++bit){
   int r = std::accumulate(v.begin(), v.end(), 0, [](int m, int n) {
     return std::gcd(m, n);});
  (gcdをlcm)
+ 
+・map<int,int>などのキーに対して降順にする方法
+mapは自動的にキーに対して昇順になるので
+map<int, int, std::greater<int>> my_map;とすると降順になる
+
+  std::vector<int> v = {12, 42, 72};ｋ
+  std::vector<int> v = {12, 42, 72};
