@@ -43,5 +43,7 @@ for(int bit = 0; bit < (1<<N); ++bit){
 mapは自動的にキーに対して昇順になるので
 map<int, int, std::greater<int>> my_map;とすると降順になる
 
-  std::vector<int> v = {12, 42, 72};ｋ
   std::vector<int> v = {12, 42, 72};
+  std::vector<int> v = {12, 42, 72};
+・vector<vector<int> > vはv[0][0]ができる
+・vector<pair<int,int> > vはv[0].first,v[0].secondでできる
