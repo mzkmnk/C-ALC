@@ -47,3 +47,7 @@ map<int, int, std::greater<int>> my_map;とすると降順になる
   std::vector<int> v = {12, 42, 72};
 ・vector<vector<int> > vはv[0][0]ができる
 ・vector<pair<int,int> > vはv[0].first,v[0].secondでできる
+
+・vector<pair<int,int> > について値についてソートする方法
+sort(v.begin(), v.end(), [](const pair<int, int>& a, const pair<int, int>& b) {
+return a.second < b.second;});
