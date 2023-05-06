@@ -4,6 +4,7 @@ using namespace std;
 using ll = long long;
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 ll MOD = pow(10,9)+7;
+ll INF = 1e18;
 
 int main() {
 }
