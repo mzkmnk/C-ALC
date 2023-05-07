@@ -1,4 +1,4 @@
-std::vector<std::vector<int>> generate_combinations(const std::vector<int>& elements, int k) {
+std::vector<std::vector<int>> combinations(const std::vector<int>& elements, int k) {
     std::vector<bool> bitmask(k, true);
     bitmask.resize(elements.size(), false);
     std::vector<std::vector<int>> result;
