@@ -55,3 +55,9 @@ return a.second < b.second;});
 ・小数点を扱うときは
 cout << fixed << setprecision(8) << ans << endl;
 とするといい
+
+・vector<vector<ll> > dpはをresize()する方法
+今回は2行3列にする方法
+vector<vector<ll> > dp;
+dp.resize(2);
+for(ll i = 0; i < 2; ++i) dp[i].resize(3);
